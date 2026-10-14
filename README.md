@@ -19,4 +19,5 @@ qemu-system-x86_64 -hdd hdd.img
 ```
 
 Подробности о сборке и запуске — в [TOOLCHAIN.md](TOOLCHAIN.md),
-архитектура системы — в [ARCHITECTURE.md](ARCHITECTURE.md).
+архитектура системы — в [ARCHITECTURE.md](ARCHITECTURE.md),
+правила веток, коммитов и pre-commit проверок — в [CONTRIBUTING.md](CONTRIBUTING.md).
