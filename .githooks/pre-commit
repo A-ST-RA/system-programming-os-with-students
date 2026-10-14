@@ -1,0 +1,14 @@
+#!/bin/sh
+# Pre-commit проверка: не даём закоммитить код, который не собирается или ломает тесты.
+# Подключение: git config core.hooksPath .githooks
+# Студентам запрещено использовать --no-verify.
+
+set -e
+
+echo "== Проверка сборки =="
+./scripts/build.sh
+
+echo "== Smoke-тесты (headless QEMU) =="
+./scripts/test.sh
+
+echo "== Pre-commit проверки пройдены =="
